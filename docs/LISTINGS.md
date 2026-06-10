@@ -25,7 +25,7 @@ Auto-crawls GitHub by repo topic `mcp-server`. Already tagged. Indexes within 24
 - **Display name:** `World Bank + FRED Macro Data`
 - **Description:** `Macro-economic indicators: World Bank, FRED (St Louis Fed), IMF, OECD. Unified query surface for AI agents.`
 - **GitHub URL:** `https://github.com/guptaprakhariitr/world-bank-economic-mcp`
-- **Endpoint URL:** `https://world-bank-economic-mcp.prakhar-cognizance.workers.dev/mcp`
+- **Endpoint URL:** `https://world-bank-economic-mcp.atlasword.workers.dev/mcp`
 - **Tags:** world-bank, fred, imf, oecd, macro, economics, gdp, inflation
 - **License:** MIT
 - **Transport:** HTTP (remote)
@@ -50,7 +50,7 @@ Auto-crawls GitHub by repo topic `mcp-server`. Already tagged. Indexes within 24
 ### Twitter / X thread template
 > Just shipped world-bank-economic-mcp — Model Context Protocol server: macro-economic indicators: world bank, fred (st louis fed), imf, oecd.
 >
-> Endpoint: https://world-bank-economic-mcp.prakhar-cognizance.workers.dev/mcp
+> Endpoint: https://world-bank-economic-mcp.atlasword.workers.dev/mcp
 > GitHub: https://github.com/guptaprakhariitr/world-bank-economic-mcp
 >
 > Free tier available. Paid from $9/mo.

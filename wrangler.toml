@@ -15,18 +15,18 @@ binding = "USAGE"
 id = "bbf8ee430f0a4927b2e041b000a70668"
 
 [vars]
-UPGRADE_URL = "https://world-bank-economic-mcp.prakhar-cognizance.workers.dev/upgrade"
+UPGRADE_URL = "https://world-bank-economic-mcp.atlasword.workers.dev/upgrade"
 WORLDBANK_BASE = "https://api.worldbank.org/v2"
 FRED_BASE = "https://api.stlouisfed.org/fred"
 PRODUCT_NAME = "world-bank-economic-mcp"
 PRODUCT_TAGLINE = "Macro-economic indicators from World Bank, FRED, IMF, OECD for AI agents."
-PRODUCT_URL = "https://world-bank-economic-mcp.prakhar-cognizance.workers.dev"
+PRODUCT_URL = "https://world-bank-economic-mcp.atlasword.workers.dev"
 DODO_PRODUCT_ID_SOLO = "pdt_0NgkTOgPw52TatrG2NAKa"
 DODO_PRODUCT_ID_TEAM = "pdt_0NgkTOjh9ate1InuPKqcd"
 DODO_PRODUCT_ID_PRO  = "pdt_0NgkTOlwwnZQKIXdOzAIe"
 FROM_EMAIL = "prakshatechnologies@gmail.com"
 DODO_BASE = "https://live.dodopayments.com"
-CUSTOMER_PORTAL_RETURN_URL = "https://world-bank-economic-mcp.prakhar-cognizance.workers.dev/account"
+CUSTOMER_PORTAL_RETURN_URL = "https://world-bank-economic-mcp.atlasword.workers.dev/account"
 
 # Secrets:
 #   FRED_API_KEY            (FRED requires a free key)

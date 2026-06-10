@@ -45,7 +45,7 @@ See `src/tools.ts` for the JSON Schema input.
 {
   "mcpServers": {
     "world-bank-economic-mcp": {
-      "url": "https://world-bank-economic-mcp.prakhar-cognizance.workers.dev/mcp",
+      "url": "https://world-bank-economic-mcp.atlasword.workers.dev/mcp",
       "headers": { "Authorization": "Bearer YOUR_API_KEY" }
     }
   }
