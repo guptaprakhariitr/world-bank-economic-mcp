@@ -1,0 +1,34 @@
+name = "world-bank-economic-mcp"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "806781fe180a4f30aac2b3b8f6c8ad56"
+
+[[kv_namespaces]]
+binding = "USAGE"
+id = "bbf8ee430f0a4927b2e041b000a70668"
+
+[vars]
+UPGRADE_URL = "https://world-bank-economic-mcp.prakhar-cognizance.workers.dev/upgrade"
+WORLDBANK_BASE = "https://api.worldbank.org/v2"
+FRED_BASE = "https://api.stlouisfed.org/fred"
+PRODUCT_NAME = "world-bank-economic-mcp"
+DODO_PRODUCT_ID_SOLO = "pdt_0NgkTOgPw52TatrG2NAKa"
+DODO_PRODUCT_ID_TEAM = "pdt_0NgkTOjh9ate1InuPKqcd"
+DODO_PRODUCT_ID_PRO  = "pdt_0NgkTOlwwnZQKIXdOzAIe"
+FROM_EMAIL = "prakshatechnologies@gmail.com"
+DODO_BASE = "https://live.dodopayments.com"
+CUSTOMER_PORTAL_RETURN_URL = "https://world-bank-economic-mcp.prakhar-cognizance.workers.dev/account"
+
+# Secrets:
+#   FRED_API_KEY            (FRED requires a free key)
+#   DODO_API_KEY
+#   DODO_WEBHOOK_SECRET
+#   RESEND_API_KEY          (optional)
+#   ADMIN_TOKEN
