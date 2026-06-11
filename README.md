@@ -204,3 +204,27 @@ MIT — see [LICENSE](LICENSE).
 - **Live status page:** [https://mcp-hub.atlasword.workers.dev/status](https://mcp-hub.atlasword.workers.dev/status)
 - **Machine-readable status:** [https://mcp-hub.atlasword.workers.dev/status.json](https://mcp-hub.atlasword.workers.dev/status.json)
 - **Source repo:** [https://github.com/guptaprakhariitr/world-bank-economic-mcp](https://github.com/guptaprakhariitr/world-bank-economic-mcp)
+
+
+## Install via npm (one-liner)
+
+A thin launcher is published as [`@atlasword/world-bank-economic-mcp`](https://www.npmjs.com/package/@atlasword/world-bank-economic-mcp) on npm. No manual URL to copy/paste:
+
+```bash
+npx -y @atlasword/world-bank-economic-mcp
+```
+
+Or wire it into your MCP client:
+
+```jsonc
+{
+  "mcpServers": {
+    "world-bank-economic": {
+      "command": "npx",
+      "args": ["-y", "@atlasword/world-bank-economic-mcp"]
+    }
+  }
+}
+```
+
+The npm package is just a launcher — it shells out to [`mcp-remote`](https://www.npmjs.com/package/mcp-remote) and points it at the hosted endpoint (`https://world-bank-economic-mcp.atlasword.workers.dev/mcp`).

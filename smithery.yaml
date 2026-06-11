@@ -1,0 +1,70 @@
+# Smithery registry config — https://smithery.ai/docs/build/project-config/smithery-yaml
+# This is an HTTP-transport MCP server; Smithery hosts the listing and proxies
+# clients straight to our Cloudflare Workers endpoint.
+
+name: world-bank-economic-mcp
+displayName: World Bank + FRED Macro Data
+description: |
+  Macro-economic indicators: World Bank, FRED (St Louis Fed), IMF, OECD. Unified query surface for AI agents.
+homepage: https://world-bank-economic-mcp.atlasword.workers.dev
+repository: https://github.com/guptaprakhariitr/world-bank-economic-mcp
+license: MIT
+version: "0.2.0"
+
+runtime: container
+
+startCommand:
+  type: http
+  url: https://world-bank-economic-mcp.atlasword.workers.dev/mcp
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        title: API key (optional)
+        description: |
+          Bearer token from https://world-bank-economic-mcp.atlasword.workers.dev/upgrade.
+          Leave blank for the anonymous free tier (~100 calls/month/IP).
+    required: []
+  exampleConfig:
+    apiKey: ""
+  commandFunction: |-
+    (config) => ({
+      type: "http",
+      url: "https://world-bank-economic-mcp.atlasword.workers.dev/mcp",
+      headers: config.apiKey ? { Authorization: `Bearer ${config.apiKey}` } : {}
+    })
+
+remote:
+  type: http
+  url: https://world-bank-economic-mcp.atlasword.workers.dev/mcp
+
+categories:
+  - research
+  - macro
+  - finance
+tags:
+  - world-bank
+  - fred
+  - imf
+  - oecd
+  - macro
+  - economics
+  - gdp
+  - inflation
+
+tools:
+  - name: wb_indicator
+  - name: wb_search_indicator
+  - name: fred_series
+  - name: fred_search_series
+  - name: compare_countries
+  - name: economic_calendar
+
+auth:
+  type: bearer
+  required: false
+  description: |
+    Optional. Anonymous free tier works for ~100 calls/month per IP. For higher
+    quotas, grab a key from https://world-bank-economic-mcp.atlasword.workers.dev/upgrade and pass
+    it as `Authorization: Bearer <key>`.
