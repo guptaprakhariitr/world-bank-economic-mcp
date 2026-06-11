@@ -3,7 +3,7 @@
   "name": "io.github.guptaprakhariitr/world-bank-economic-mcp",
   "title": "World Bank & FRED Macro",
   "description": "Macro indicators from World Bank, FRED, IMF, and OECD via unified query surface.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "websiteUrl": "https://world-bank-economic-mcp.atlasword.workers.dev/",
   "repository": {
     "url": "https://github.com/guptaprakhariitr/world-bank-economic-mcp",
@@ -13,16 +13,6 @@
     {
       "type": "streamable-http",
       "url": "https://world-bank-economic-mcp.atlasword.workers.dev/mcp"
-    }
-  ],
-  "packages": [
-    {
-      "registryType": "npm",
-      "identifier": "@insnapsprakhar/world-bank-economic-mcp",
-      "version": "0.2.0",
-      "transport": {
-        "type": "stdio"
-      }
     }
   ]
 }
