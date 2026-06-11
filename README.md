@@ -208,10 +208,10 @@ MIT — see [LICENSE](LICENSE).
 
 ## Install via npm (one-liner)
 
-A thin launcher is published as [`@atlasword/world-bank-economic-mcp`](https://www.npmjs.com/package/@atlasword/world-bank-economic-mcp) on npm. No manual URL to copy/paste:
+A thin launcher is published as [`@insnapsprakhar/world-bank-economic-mcp`](https://www.npmjs.com/package/@insnapsprakhar/world-bank-economic-mcp) on npm. No manual URL to copy/paste:
 
 ```bash
-npx -y @atlasword/world-bank-economic-mcp
+npx -y @insnapsprakhar/world-bank-economic-mcp
 ```
 
 Or wire it into your MCP client:
@@ -221,7 +221,7 @@ Or wire it into your MCP client:
   "mcpServers": {
     "world-bank-economic": {
       "command": "npx",
-      "args": ["-y", "@atlasword/world-bank-economic-mcp"]
+      "args": ["-y", "@insnapsprakhar/world-bank-economic-mcp"]
     }
   }
 }
